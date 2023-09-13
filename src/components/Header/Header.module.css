@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: .5em .75em;
+  background-color: #e7f3ae;
+  border-bottom: .1em solid #a2b430;
+  z-index: 100;
+}
+
+.header span {
+  font-size: 3em;
+  color: goldenrod;
+  font-weight: 900;
+}
+
+.header nav {
+  padding: 1em;
+}
+
+.header a {
+  text-decoration: none;
+  color: goldenrod;
+  padding-inline: .25em;
+  margin-right: .5em;
+  font-size: 1.5em;
+}

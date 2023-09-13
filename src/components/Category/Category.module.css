@@ -1,0 +1,27 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  min-width: 10em;
+  max-width: 15em;
+  margin: 0 auto;
+}
+
+.category h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  background-color:  #e8fa7050;
+  margin: 3em 0 2em   ;
+  padding: .5em;
+  border-radius: 5em;
+}
+
+.category div {
+  display: flex;
+  height: 15em;
+  gap: 3em;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: .1em;
+  margin-inline: .2em;
+}
