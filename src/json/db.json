@@ -1,0 +1,18 @@
+[
+  {
+    "id": "00001",
+    "title": "My first book",
+    "author": "J.Scott",
+    "cover": "https://bookstore/cover01.jpg",
+    "url": "https://www.bookstore.com/my-first-book-00001",
+    "category": "Produtivity"
+  },
+  {
+    "id": "00002",
+    "title": "Second example",
+    "author": "J.Scott",
+    "cover": "https://bookstore/cover02.jpg",
+    "url": "https://www.bookstore.com/second-example-00002",
+    "category": "Produtivity"
+  }
+]
