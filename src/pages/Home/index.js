@@ -32,30 +32,4 @@ function Home() {
   );
 }
 
-// const categories = new Set()
-// books.map((book) => categories.add(book.category))
-// function App() {
-//   return (
-//     <>
-//       <Header />
-//       <Banner image="two" />
-//       <Container>
-//         {categories.forEach((label) => {
-//           let book = books.filter((book) => book.category === label);
-//           return (<Category label={book.category}>
-//             <Card
-//               url={book.url}
-//               cover={book.cover}
-//               title={book.title}
-//               key={book.id}
-//             />
-//           </Category>)
-//          })
-//         }
-//       </Container>
-//       <Footer />
-//     </>
-//   );
-// }
-
 export default Home;
