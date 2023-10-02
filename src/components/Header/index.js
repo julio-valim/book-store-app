@@ -8,8 +8,9 @@ function Header() {
         <span>Book Store</span>
       </Link>
       <nav>
-        <Link to='/'>Home</Link>
+        {/* <Link to='/'>Home</Link> */}
         <Link to='/search'>Search</Link>
+        <Link to='/favorites'>Bookshelf</Link>
       </nav>
     </header>
   )
