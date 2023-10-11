@@ -20,7 +20,7 @@ export function useFavoriteContext(){
   const { favorite, setFavorite } = useContext(FavoritesContext)
 
   function addFavorite(newFavorite){
-    const repeatedFavorite = favorite.some((el)=>el.id===newFavorite.id)
+    const repeatedFavorite = favorite.some(el=>el.id===newFavorite.id)
 
     let newFavoriteList = [...favorite]
 
@@ -29,7 +29,7 @@ export function useFavoriteContext(){
       return setFavorite(newFavoriteList)
     }
 
-    newFavoriteList = favorite.filter((el)=>el.id!==newFavorite.id)
+    newFavoriteList = favorite.filter(el=>el.id!==newFavorite.id)
     return setFavorite(newFavoriteList)
   }
   return {
