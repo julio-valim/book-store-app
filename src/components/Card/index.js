@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import styles from './Card.module.css'
-// import checkedIcon from './fav_checked.png'
+import checkedIcon from './fav_checked.png'
 import uncheckedIcon from './fav_unchecked.png'
 import { useFavoriteContext } from '../../contexts/Favorites';
 
-function Card({ id, url, cover, title }) {
-
+function Card({ url, cover, title, id }) {
   const { favorite, addFavorite } = useFavoriteContext()
+  const isFavorite = favorite.some(el=>el.id===id)
 
   return(
     <section className={styles.card}>
@@ -17,7 +17,7 @@ function Card({ id, url, cover, title }) {
       </Link>
       <figure className={styles.icon}>
         <img 
-          src={uncheckedIcon}
+          src={isFavorite ? checkedIcon : uncheckedIcon}
           alt='favorite'
           onClick={()=>addFavorite({id})}  
         />
